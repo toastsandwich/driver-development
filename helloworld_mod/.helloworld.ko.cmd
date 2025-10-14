@@ -1,0 +1,1 @@
+savedcmd_helloworld.ko := ld -r -m elf_x86_64 --fatal-warnings -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T /home/toastsandwich/ldd/linux-6.18-rc1/scripts/module.lds -o helloworld.ko helloworld.o helloworld.mod.o .module-common.o

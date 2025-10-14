@@ -1,1 +1,1 @@
-savedcmd_modules.order := {   echo info_mod.o; :; } > modules.order
+savedcmd_modules.order := {  :; } > modules.order

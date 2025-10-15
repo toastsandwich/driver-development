@@ -1,0 +1,1 @@
+savedcmd_info_mod.ko := ld.lld -r -m elf_x86_64 --fatal-warnings -z noexecstack --build-id=sha1  -T /home/toastsandwich/ldd/linux-6.18-rc1/scripts/module.lds -o info_mod.ko info_mod.o info_mod.mod.o .module-common.o

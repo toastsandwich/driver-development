@@ -1,0 +1,1 @@
+savedcmd_/home/toastsandwich/ldd/helloworld_mod/Module.symvers :=  scripts/mod/modpost -M  -a    -N  -o /home/toastsandwich/ldd/helloworld_mod/Module.symvers -n -T /home/toastsandwich/ldd/helloworld_mod/modules.order -i Module.symvers -e 

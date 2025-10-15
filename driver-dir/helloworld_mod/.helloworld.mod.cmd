@@ -1,0 +1,1 @@
+savedcmd_/home/toastsandwich/ldd/helloworld_mod/helloworld.mod := printf '%s\n'   helloworld.o | awk '!x[$$0]++ { print("/home/toastsandwich/ldd/helloworld_mod/"$$0) }' > /home/toastsandwich/ldd/helloworld_mod/helloworld.mod

@@ -1,7 +1,0 @@
-# CompileFlags:
-  # Add: [
-    # "-I/usr/lib/modules/6.17.1-arch1-1/build/include",
-    # "-I/usr/lib/modules/6.17.1-arch1-1/build/arch/x86/include",
-    # "-D__KERNEL__",
-    # "-DMODULE"
-  # ]

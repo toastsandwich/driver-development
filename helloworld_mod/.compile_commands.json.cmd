@@ -1,1 +1,0 @@
-savedcmd_/home/toastsandwich/ldd/helloworld_mod/compile_commands.json := python3 scripts/clang-tools/gen_compile_commands.py -a ar -o /home/toastsandwich/ldd/helloworld_mod/compile_commands.json /home/toastsandwich/ldd/helloworld_mod/modules.order

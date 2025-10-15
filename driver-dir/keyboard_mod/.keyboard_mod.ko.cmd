@@ -1,0 +1,1 @@
+savedcmd_keyboard_mod.ko := ld.lld -r -m elf_x86_64 --fatal-warnings -z noexecstack --build-id=sha1  -T /home/toastsandwich/ldd/linux-6.18-rc1/scripts/module.lds -o keyboard_mod.ko keyboard_mod.o keyboard_mod.mod.o .module-common.o

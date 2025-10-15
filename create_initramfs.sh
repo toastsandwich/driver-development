@@ -34,13 +34,21 @@ ip link set lo up
 # Wait for NIC
 sleep 0.5
 
+# create pts device node
+mkdir dev/pts
+mknod -m 666 dev/ptmx c 5 2
+mount -t devpts devpts /dev/pts
+
 # mount driver-dir to guest
 mount -t nfs -o nolock host:/home/toastsandwich/ldd/driver-dir /mnt
 
+# telnetd
+telnetd -l /bin/sh
+
 # Make the new shell as a login shell with -l option
 # Only login shell read /etc/profile
+echo "Welcome to your sandbox ...."
 setsid sh -c 'exec sh -l </dev/ttyS0 >/dev/ttyS0 2>&1'
-poweroff
 EOF
 
 chmod +x $INITRAMFS_DIR/init

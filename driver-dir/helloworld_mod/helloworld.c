@@ -1,5 +1,4 @@
 #include "linux/kern_levels.h"
-#include "linux/stddef.h"
 #include <linux/errno.h>
 #include <linux/init.h>
 #include <linux/module.h>
@@ -15,12 +14,7 @@ module_param(n, int, S_IRUGO);
 static int hello_init(void) {
 	printk(KERN_INFO "hello world\n");
 	printk(KERN_INFO "%s\n", name);
-	printk(KERN_INFO "%d\n", n);
-
-	for (char *c = name; c != NULL; c++) {
-		printk(KERN_WARNING "%c", *c);
-	}
-	
+	printk(KERN_INFO "%d\n", n);	
 	return 0;
 }
 

@@ -17,5 +17,3 @@ __section(".gnu.linkonce.this_module") = {
 
 MODULE_INFO(depends, "");
 
-
-MODULE_INFO(srcversion, "0DEF1D437E9D109DE5151F1");
